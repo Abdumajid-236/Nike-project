@@ -1,0 +1,313 @@
+@import url(../style/fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-nav {
+    background: #322e41;
+}
+
+.nav-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.nav-box__list {
+    display: flex;
+    column-gap: 30px;
+
+}
+
+.nav-list__link {
+    font-family: "RR";
+    font-size: 16px;
+    color: #fff;
+    transition: 700ms all;
+}
+
+.nav-list__link:hover {
+    color: #d47300;
+    background: #fff;
+    padding: 30px 20px;
+}
+
+.header-content {
+    background: url(../image/Nike-Adapt-BB\ 1\ \(2\).jpg) no-repeat center /cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content__title {
+    font-family: "RB";
+    font-size: 50px;
+    color: #fff;
+}
+
+.header-content__text {
+    font-family: "RR";
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.main {
+    background: rgb(246, 238, 223);
+    padding-bottom: 30px;
+}
+
+.main-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.main-group__left {
+    background: white;
+    padding: 20px 20px 30px 20px;
+    border-radius: 6px;
+    margin-top: -40px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.main-left__title {
+    font-family: "RB";
+    font-size: 22px;
+    color: #2c2a2a;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main-group__text {
+    max-width: 510px;
+    width: 100%;
+    font-family: "RR";
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.main-left__img {
+    width: 100%;
+}
+
+
+.main-group__right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: -40px;
+    max-width: 540px;
+    width: 100%;
+
+
+}
+
+.main-right__block {
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    max-width: 255px;
+    width: 100%;
+}
+
+.main-block__img {
+    margin-top: 10px;
+}
+
+.main-block__title {
+    font-family: "RB";
+    font-size: 22px;
+    line-height: 0.72727;
+    color: #2c2a2a;
+    margin-top: 10px;
+}
+
+.main-block__text {
+    font-family: "RR";
+    font-size: 16px;
+    line-height: 1;
+    color: #9b9b9b;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer {
+    background: #322e41;
+    height: 250px;
+
+}
+
+.footer-item {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+}
+
+.footer-form__input {
+    border-radius: 6px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+
+.footer-form__text {
+    resize: none;
+    height: 86px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.footer-item__btn {
+    background: #544294;
+    border-radius: 6px;
+    font-family: "RR";
+    font-size: 16px;
+    line-height: 1.125;
+    color: #fff;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.footer-item__right {
+    display: flex;
+    column-gap: 50px;
+}
+
+.footer-list__link {
+    font-family: "RR";
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #fff;
+    transition: 700ms all;
+
+}
+
+.footer-list__link:hover {
+    color: #d47300;
+}
+
+@media (max-width: 1170px) {
+    .header-nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .main-right__block {
+        max-width: none;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .main-group__left {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .main-group__right {
+        margin: 0;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+
+    .nav-box {
+        row-gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .footer {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-item__right {
+        margin-top: 30px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 1150px) {
+    .main-group {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-item {
+        flex-direction: column;
+    }
+
+    .footer-item__right {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 682px) {
+    .nav-box__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-box {
+        justify-content: center;
+    }
+
+    .nav-box__list {
+        row-gap: 30px;
+    }
+
+
+}
+
