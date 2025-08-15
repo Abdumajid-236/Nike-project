@@ -156,7 +156,6 @@
 .footer {
     background: #322e41;
     height: 250px;
-
 }
 
 .footer-item {
@@ -260,18 +259,17 @@
     }
 
     .footer {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        height: 300px;
+    }
+
+    .footer-item {
+        flex-direction: column;
+        justify-content: center;
     }
 
     .footer-item__right {
         margin-top: 30px;
     }
-
-    .footer-item {
-        flex-direction: column;
-    }
-
 }
 
 
